@@ -1,0 +1,220 @@
+/* General Settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: transparent; 
+    transition: background-color 0.4s ease;
+    padding: 20px 0;
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 20px; /* Space between centered items */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Helps visibility on bright images */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #4ecdc4 !important; 
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                      url('images/UNDER10 Showcase 2024 24_8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Handwritten Slogan */
+.slogan-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem !important;
+    letter-spacing: 2px;
+}
+
+.shadow-text {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Colorful Text for Headings */
+.colorful-heading {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #556270);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Typography tweaks */
+.line-height-large {
+    line-height: 1.8;
+}
+
+/* Image Hover Animation */
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.03);
+}
+
+/* Styling for the Experience Page Header */
+.experience-hero {
+    height: 50vh; /* Shorter than home page hero */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url('images/UNDER10 Showcase 2024 24_8(1).jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+/* Ensure all experience images have a consistent height/look */
+.experience-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.experience-img:hover {
+    transform: scale(1.02);
+}
+
+/* Spacing and Typography for Content */
+.colorful-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .order-2 { order: 2 !important; }
+    .order-1 { order: 1 !important; }
+}
+
+/* --- Gallery Styles  --- */
+
+.gallery-hero {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('images/UNDER10 Showcase 2025 6_9(2).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Image heights for different rows */
+.main-height { height: 450px; }
+.square-height { height: 300px; }
+.medium-height { height: 350px; }
+.small-height { height: 250px; }
+
+.gallery-img {
+    width: 100%;
+    object-fit: cover; 
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(20%);
+}
+
+/* Bonus: Interactive hover effect */
+.gallery-img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Mobile Tweak: On small screens, all images become standard height */
+@media (max-width: 768px) {
+    .gallery-img {
+        height: 250px !important;
+    }
+}
+
+/* --- Let's Dance Page Styles --- */
+
+.dance-hero {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url('images/PERFORMANCE VIDEO SHOOTING PROJECT 2025 1_3_(1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    background: white;
+    transition: transform 0.3s ease;
+    height: 100%;
+    border-bottom: 5px solid #ff6b6b; /* Colorful accent */
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    font-size: 3rem;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Colorful Gradient Background for Form Section */
+.bg-gradient-custom {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+}
+
+/* Button */
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ee5253;
+}
+
+/* Form  */
+.form-control, .form-select {
+    border: 1px solid #eee;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #4ecdc4;
+    box-shadow: 0 0 0 0.25rem rgba(78, 205, 196, 0.25);
+}
+
+/* Let's Dance Style Cards */
+
+.style-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.style-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.style-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Large card */
+.bg-gradient-custom {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+}
+
+/* Typography for the cards */
+.card-body h5 {
+    color: #ff6b6b; /* Matching the colorful theme */
+}
